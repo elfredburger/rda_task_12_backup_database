@@ -1,7 +1,4 @@
-
-#mysql -u $DB_USER -p$DB_PASSWORD -e "GRANT SELECT, LOCK TABLES, SHOW VIEW, PROCESS ON *.* TO 'backup'@'%';"
-#mysql -u $DB_USER -p$DB_PASSWORD -e "GRANT ALL ON ShopDBReserve.* TO 'backup'@'%';"
-#mysql -u $DB_USER -p$DB_PASSWORD -e "GRANT INSERT, LOCK TABLES, ALTER ON ShopDBDevelopment.* TO 'backup'@'%';"
+#! /bin/bash
 
 mysqldump -u $DB_USER -p$DB_PASSWORD ShopDB --no-create-db --result-file=full_backup.sql
 
