@@ -9,4 +9,4 @@ mysqldump -u $DB_USER -p$DB_PASSWORD --databases ShopDB --no-create-info --resul
 
 mysql -u $DB_USER -p$DB_PASSWORD ShopDBReserve < full_backup.sql
 
-mysql -u $DB_USER -p$DB_PASSWORD ShopDBReserve < partial_backup.sql
+mysql -u $DB_USER -p$DB_PASSWORD ShopDBDevelopment < partial_backup.sql
